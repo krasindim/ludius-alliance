@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  background: top 0% center no-repeat url(back.jpg);
+  background-size: 100%;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 2;
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;
+}
+
+.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.preloader-logo {
+  position: absolute;
+  animation: logopreloader 3s linear 0s 1 normal forwards;
+  top: 36%;
+  left: 46%;
+  height: 170px;
+}
+
+.preloader-logo-text {
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  animation: logotextpreloader 3s linear 0s 1 normal forwards;
+  top: 50%;
+  left: 39%;
+  font-size: 52px;
+}
+
+.preloader-main-text {
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  animation: maintextpreloader 6s linear 0s 1 normal forwards;
+  /* top: 20%; */
+  left: 23%;
+  font-size: 140px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  transform: scale(0.65, 1);
+}
+
+@keyframes maintextpreloader {
+  0% {
+    clip: rect(180px auto auto auto);
+  }
+  55% {
+    clip: rect(180px auto auto auto);
+    top: 18%;
+  }
+  60% {
+    clip: rect(0px auto auto auto);
+    top: 17%;
+  }
+
+  90% {
+    opacity: 1;
+    top: 17%;
+  }
+
+  100% {
+    top: 17%;
+    opacity: 1;
+  }
+}
+
+@keyframes logopreloader {
+  0% {
+    clip: rect(180px auto auto auto);
+    opacity: 1;
+  }
+  25% {
+    clip: rect(0px auto auto auto);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logotextpreloader {
+  0% {
+    clip: rect(auto 0px auto auto);
+  }
+  20% {
+    clip: rect(auto 0px auto auto);
+  }
+  50% {
+    clip: rect(auto 470px auto auto);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.header {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.main-text {
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  top: 22%;
+  left: 23%;
+  font-size: 140px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  transform: scale(0.65, 1);
+}
+
+.logo {
+  position: absolute;
+  margin: 1% auto auto 1%;
+  height: 8%;
+  animation: logo 7s linear 0s 1 normal forwards;
+}
+
+@keyframes logo {
+    0% {
+        clip: rect(100px auto auto auto);
+        margin: 2% auto auto 1%;
+      }
+
+      80% {
+        clip: rect(100px auto auto auto);
+        margin: 2% auto auto 1%;
+      }
+    
+      100% {
+        clip: rect(0px auto auto auto);
+        margin: 1% auto auto 1%;
+      }
+}
+
+.logo-text {
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  width: 5%;
+
+  font-weight: bold;
+  transform: scale(0.65, 1);
+  animation: logo-text 7s linear 0s 1 normal forwards;
+}
+
+@keyframes logo-text {
+    0%{
+        clip: rect(100px auto auto auto);
+        margin: 2.3% auto auto 5%;
+    }
+
+    80% {
+        clip: rect(100px auto auto auto);
+        margin: 2.3% auto auto 5%;
+    }
+    
+      100% {
+        clip: rect(0px auto auto auto);
+        margin: 1.5% auto auto 5%;
+      }
+}
+
+.flag {
+  position: absolute;
+  margin: 1.4% auto auto 50%;
+  height: 2%;
+  animation: flag 7s linear 0s 1 normal forwards;
+}
+
+@keyframes flag {
+    0% {
+        clip: rect(100px auto auto auto);
+        margin: 2% auto auto 50%;
+      }
+
+      80% {
+        clip: rect(100px auto auto auto);
+        margin: 2% auto auto 50%;
+      }
+    
+      100% {
+        clip: rect(0px auto auto auto);
+        margin: 1.4% auto auto 50%;
+      }
+}
+
+.flag-text {
+  position: absolute;
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: lighter;
+  width: 5%;
+  margin: 1.2% auto auto 46%;
+  animation: flag-text 7s linear 0s 1 normal forwards;
+}
+
+@keyframes flag-text {
+    0% {
+        clip: rect(100px auto auto auto);
+        margin: 2% auto auto 46%;
+      }
+      80% {
+        clip: rect(100px auto auto auto);
+        margin: 2% auto auto 46%;
+      }
+    
+      100% {
+        clip: rect(0px auto auto auto);
+        margin: 1.2% auto auto 46%;
+      }
+}
+
+.guiness-recor {
+  position: absolute;
+  /* margin: 1.2% auto auto 85%; */
+  height: 4%;
+  width: 12%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 2em;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  animation: guiness-recor 7s linear 0s 1 normal forwards;
+}
+
+@keyframes guiness-recor {
+  0% {
+    clip: rect(100px auto auto auto);
+    margin: 2% auto auto 85%;
+  }
+
+  80% {
+    clip: rect(100px auto auto auto);
+    margin: 2% auto auto 85%;
+  }
+
+  100% {
+    clip: rect(0px auto auto auto);
+    margin: 1.2% auto auto 85%;
+  }
+}
